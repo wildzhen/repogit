@@ -1,0 +1,419 @@
+    /*-------------------------------------------*\
+    GENERAL CSS
+    \*-------------------------------------------*/
+    @import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
+    body{
+        font-family: 'Cardo',Helvetica,Arial,Lucida,sans-serif;
+    }
+    h1, .et-db #et-boc .et-l h1, h2, .et-db #et-boc .et-l h2, h3, .et-db #et-boc .et-l h3, h4, .et-db #et-boc .et-l h4, h5, .et-db #et-boc .et-l h5, h6, .et-db #et-boc .et-l h6 {
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    }
+    /**
+    * Woocommerce Error Message
+    */
+
+    span.et_overlay {
+    display: none !important;
+    }
+
+    /* Breadcrumbs */
+    span.breadcrumb_last {
+        font-weight: 700;
+        color: #000;
+    }
+    /* Back to top */
+
+    span.et_pb_scroll_top.et-pb-icon.et-visible, .et_pb_scroll_top.et-pb-icon {
+        background: transparent !important;
+        color: #000 !important;
+        border: 1px solid !important;
+        border-radius: 0 !important;
+        padding: .3em !important;
+    }
+    /*-------------------------------------------*\
+    WOOCOMMERCE ARCHIVE PAGE / CATEGORY PAGE
+    \*-------------------------------------------*/
+
+
+    /**
+    * Above Product Loop
+    */
+
+
+    /*** PRODUCT FILTERS *****/
+
+    .prdctfltr_wc {
+        margin-bottom: 15px;
+    }
+    span.prdctfltr_woocommerce_filter_title {
+        display: none;
+    }
+
+    span.prdctfltr_showing:before {
+        display: none;
+    }
+
+    span.prdctfltr_regular_title {
+        padding: .2rem .5rem!important;
+        padding-right: 1rem !important;
+    }
+
+    i.prdctfltr-down, i.prdctfltr-up {
+        right: 4px!important;
+        top: 7px !important;
+    }
+
+    .prdctfltr_add_scroll.prdctfltr_max_height.prdctfltr_down,.prdctfltr_add_scroll.prdctfltr_down {
+        position: relative;
+        top: 44px !important;
+    }
+
+
+    span.prdctfltr_showing {
+        font-family: "Montserrat";
+        font-weight: 300;
+        letter-spacing: .15em;
+        font-size: 12px;
+        line-height: 11px;
+        color:#191919;
+        float: left;
+        margin: 10px 0;
+    }
+    .prdctfltr_filter_inner .prdctfltr_filter {
+        display: none;
+        }
+
+    .prdctfltr_filter_inner {
+        width: 80%;
+        padding: 0 0.5% !important;
+    }
+    .prdctfltr_filter_inner .prdctfltr_filter {
+        width: fit-content !important;
+        padding:2px;
+        margin:0 .2em;
+    }
+
+    span.prdctfltr_regular_title {
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        border: 1px solid #191919 !important;
+    }
+
+    span.prdctfltr_regular_title:after {
+        font-size: 1.2em;
+        letter-spacing: .1em;
+    }
+
+
+    .prdctfltr_add_scroll {
+        min-width: 20vw !important;
+    }
+
+    .prdctfltr_add_scroll.prdctfltr_max_height.prdctfltr_down,.prdctfltr_add_scroll.prdctfltr_down {
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        border: 1px solid #191919 !important;
+    }
+
+    .prdctfltr_checkboxes label span {
+        font-size: 1em !important;
+        font-weight:400;
+    }
+    .prdctfltr_filter label {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .prdctfltr_wc .prdctfltr_buttons {
+        margin-bottom: 0;
+    }
+    .prdctfltr_buttons {
+        float: right;
+    }
+
+    .prdctfltr_collector.prdctfltr_collector_border {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    span.prdctfltr_selected_title {
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: .1em;
+    }
+    .prdctfltr_collector_border>span {
+        border-radius: 0;
+    }
+    span.prdctfltr_sale {
+        color: #c8754e;
+    }
+    span.prdctfltr_instock {
+        display: none !important;
+    }
+    /** Button Load More **/
+
+    div#lm {
+        position: relative;
+        float: left;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        width: 20%;
+        height: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+    #loadMore {
+        width: 92.1px;
+        color: #444;
+        display: block;
+        text-align: center;
+        margin: 3px 0;
+        padding: 3px;
+        border-radius: 0;
+        transition: .3s;
+        border: 1px solid #9f9f9f;
+        background-color: #fff;
+        font-size: 0.85em;
+        text-transform: uppercase;
+    }
+    }
+    .wc-prdctfltr-select .et_pb_module.et_pb_code.et_pb_code_0_tb_body {
+        top: 4.5vh;
+    }
+    .prdctfltr_collector_border>span {
+        border: 1px solid #777;
+        border-color: rgba(0,0,0,0.05);
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    .prdctfltr_collector_border>span {
+        border: none;
+    }
+
+    a.prdctfltr_title_remove:hover {
+        padding: 1ppx;
+        background: #d00;
+    }
+
+    i.prdctfltr-delete:hover {
+        color: #fff;
+    }
+    i.prdctfltr-delete {
+    color:#000}
+    /**
+    * Product Loop
+    */
+    ul.products li.product .onsale {
+        display: none;
+    }
+
+    ul.products h2.woocommerce-loop-product__title {
+        font-family: "Montserrat";
+        color: #191919;
+        font-weight: 400;
+        text-align: left;
+        font-size: .95em !important;
+        line-height: 1;
+        letter-spacing: .1em;
+        text-transform: capitalize;
+
+    }
+    ul.products .woocommerce a.woocommerce-LoopProduct-link.woocommerce-loop-product__link h2 {
+        padding-left: 0 !important;
+    }
+    ul.products span.price {
+        text-align: left;
+        line-height: 1;
+    }
+
+    ul.products span.woocommerce-Price-amount.amount {
+        font-family: "Montserrat";
+        color: #000!important;
+        font-weight: 600;
+        letter-spacing: .1em;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    ul.products .loop-brands,ul.products .nobrd {
+        font-family: "Montserrat";
+        text-align: left;
+        color: #191919;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+    ul.products .testMan {
+        font-family: "Montserrat";
+        font-size: .85em;
+    }
+    .woocommerce .star-rating {
+        height: 1.2em;
+    }
+    .star-rating span::before {
+        color: #7a7a7a !important;
+    }
+    /* Out of Stock */
+
+    p.stock.out-of-stock {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: red;
+    font-weight: 700;
+    font-style: italic;
+    background: yellow;
+    padding: 0 .5em;
+    }
+
+    p.out-of-stock-sg {
+    padding-top: 25px;
+    font-size: 1.6em;
+    color: red;
+    font-style: italic;
+    }
+
+
+    /* Remove Instock notice*/
+
+    p.stock.in-stock {
+    display: none;
+    }
+
+
+    /**
+    * Color Attributes Swatch
+    */
+
+    .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-archive-align-center .wvs-archive-variation-wrapper .variable-items-wrapper {
+        justify-content:flex-start;}
+
+    .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item .variable-item-span, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item .variable-item-span:after, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item img {
+        border-radius: 0;
+    }
+
+    .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item .variable-item-span, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item .variable-item-span:after, .woo-variation-swatches-stylesheet-enabled.woo-variation-swatches-style-rounded .variable-items-wrapper .variable-item img {
+        border-radius: 0;
+    }
+
+    li.variable-item.image-variable-item {
+        width: 40px !important;
+        height: 50px !important;
+    }
+
+    ul.variations {
+        padding: 0 !important;
+    }
+
+    ul.variable-items-wrapper {
+        margin-bottom: 1% !important;
+        padding-bottom: 1% !important;
+    }
+    /**
+    * Side bar Loop
+    */
+    .et_pb_module.et_pb_sidebar_0_tb_body.et_pb_widget_area.clearfix.et_pb_widget_area_left.et_pb_bg_layout_light {
+        border-right: 0 !important;
+    }
+    .term-femme li.level1-child.cat-item>a,.term-femme_vetements li.level1-child.cat-item>a, .term-femme_chaussures li.level1-child.cat-item>a, .term-femme_accessoires li.level1-child.cat-item>a,.term-femme_beaute li.level1-child.cat-item>a,.term-homme li.level1-child.cat-item>a,.term-homme_vetements li.level1-child.cat-item>a, .term-homme_chaussures li.level1-child.cat-item>a, .term-homme_accessoires li.level1-child.cat-item>a,.term-homme_beaute li.level1-child.cat-item>a  {
+        font-size: .9em !important;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        line-height: 1;
+        font-style:normal;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color:#191919!important;
+    }
+    .term-femme ul.product-categories li.level1-child,.term-femme_vetements ul.product-categories li.level1-child, .term-femme_chaussures ul.product-categories li.level1-child, .term-femme_accessoires ul.product-categories li.level1-child,.term-femme_beaute ul.product-categories li.level1-child,.term-homme ul.product-categories li.level1-child,.term-homme_vetements ul.product-categories li.level1-child, .term-homme_chaussures ul.product-categories li.level1-child, .term-homme_accessoires ul.product-categories li.level1-child,.term-homme_beaute ul.product-categories li.level1-child  {
+    margin:25px 0 0px 0 !important;
+    }
+
+    .term-femme ul.product-categories li.level1-child:first-child,.term-homme ul.product-categories li.level1-child:first-child{
+        margin-top:0 !important;
+    }
+    .et-db #et-boc .et-l .et_pb_widget ul li {
+        margin-bottom: 3px;
+        margin-left: 0;
+    }
+
+    li.level2-child.cat-item a:before {
+        display: none;
+    }
+
+    li.level2-child.cat-item a {
+        font-size: .85em !important;
+        font-family: "inherit";
+        letter-spacing: .1em;
+        color: #191919 !important;
+        text-transform: capitalize;
+        line-height: 15px;
+    }
+    li.level2-child.cat-item {
+        padding-left: 20px;
+    }
+
+    li.level2-child.cat-item a:hover {
+        font-weight:700 !important;
+        color:#c8754e !important;
+        }
+    .cat-title {
+        display: none;
+    }
+    /* Page scrolling effect Requires Plugin Fixed Widget Activated */
+    ul.product-categories {
+        overflow-y: scroll;
+        height: 600px;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
+
+        /* Catalog Page Dimension */
+        .flex-row {
+            display: flex !important;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            }
+
+            @media screen and (min-width: 720px) {
+            .flex-col-1 {
+            flex: 0 1 auto !important;
+            margin: 5px !important;
+            width: 18% !important
+            }
+
+            .flex-col-2 {
+            flex: 0 1 auto !important;
+            margin: 5px !important;
+            width: 82% !important
+            }
+
+            .flex-col-2 ul.products.columns-4,
+            .flex-col-2 ul.products.columns-3 {
+            width: 100% !important;
+            }
+
+            ul.products li.product {
+                margin-bottom: 1% !important;
+            }
+            }
+
+            @media screen and (max-width: 480px) {
+
+            .flex-col-1 {
+            display: none;
+            }
+
+            .flex-col-2 {
+            width: 100% !important;
+
+            }
+
+            }

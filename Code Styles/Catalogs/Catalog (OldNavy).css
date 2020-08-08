@@ -1,0 +1,405 @@
+    /*-------------------------------------------*\
+    GENERAL CSS
+    \*-------------------------------------------*/
+    /*
+    body {
+        font-family:"FranklinGothic", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Roboto", sans-serif;
+
+    }
+    @font-face {
+        font-family: FranklinGothic;
+        src: url("/static_content/onesitecategory/components/mfe/category-page/static/fonts/franklingothic-demi-webfont.eot?#iefix") format("embedded-opentype"), url("/static_content/onesitecategory/components/mfe/category-page/static/fonts/franklingothic-demi-webfont.woff2") format("woff2"), url("/static_content/onesitecategory/components/mfe/category-page/static/fonts/franklingothic-demi-webfont.woff") format("woff"), url("/static_content/onesitecategory/components/mfe/category-page/static/fonts/franklingothic-demi-webfont.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 700;
+    } */
+
+    body.archive {
+        overflow-x: hidden;
+    }
+
+    /**
+    * Breadcrumbs
+    */
+
+    @media only screen and (min-width: 1200px) {
+        .archive #breadcrumbs {
+            margin-left: 0px;
+        }
+    }
+
+    /**
+    * Woocommerce Error Message
+    */
+
+
+    /**
+    * Back To Top
+    */
+    span.et_pb_scroll_top.et-pb-icon.et-visible,
+    .et_pb_scroll_top.et-pb-icon {
+        border-radius: 100%;
+        background: #013765;
+    }
+
+    /*-------------------------------------------*\
+    WOOCOMMERCE ARCHIVE PAGE / CATEGORY PAGE
+    \*-------------------------------------------*/
+
+
+    /**
+    * Above Product Loop
+    */
+
+    /**
+    * Product Filters
+    */
+
+    /* Modify display filter */
+    @media screen and (min-width: 720px) {
+
+        .prdctfltr_wc.prdctfltr_woocommerce.woocommerce.prdctfltr_wc_regular.pf_select.prdctfltr_always_visible.prdctfltr_click_filter.prdctfltr_checkbox.prdctfltr_search_fields.prdctfltr_hierarchy_lined.prdctfltr_adoptive_reorder.pf_mod_multirow.prdctfltr_scroll_default {
+            display: flex;
+        }
+
+        .prdctfltr_filter_inner {
+            margin-right: 1.1vw;
+        }
+
+        span.prdctfltr_filter_title {
+            width: 25%;
+            order: 4;
+            margin: 0;
+        }
+
+        form.prdctfltr_woocommerce_ordering {
+            width: 100%;
+            order: 1;
+        }
+
+        span.prdctfltr_woocommerce_filter_title {
+            display: none;
+        }
+
+        span.prdctfltr_showing:before {
+            display: none;
+        }
+
+        span.prdctfltr_showing {
+            font-size: .95em;
+            color: #666666;
+            font-weight: 400;
+            line-height: 2.5em
+        }
+
+        .prdctfltr_wc.prdctfltr_woocommerce.pf_select .prdctfltr_filter_title {
+            margin-bottom: 0;
+            height: 100%;
+            text-align: right;
+        }
+
+        .archive span.prdctfltr_reset:hover {
+            color: #000;
+        }
+
+        .prdctfltr_add_scroll.prdctfltr_max_height.prdctfltr_down {
+            width: 100% !important;
+        }
+
+        .prdctfltr_add_scroll.prdctfltr_down {
+            width: 100%;
+        }
+
+        span.prdctfltr_customize_block.prdctfltr_customize {
+            border: 0;
+
+        }
+
+        span.prdctfltr_customize_color {
+            border: 1px solid #000;
+        }
+
+        .prdctfltr_add_scroll.prdctfltr_max_height.prdctfltr_down {
+            min-width: 18.125rem;
+            max-width: 45rem;
+        }
+
+        .prdctfltr_add_scroll.prdctfltr_down {
+            min-width: 18.125rem;
+            max-width: 45rem;
+        }
+
+    }
+
+    /**** End Modify ***/
+
+
+    .prdctfltr_checkboxes {
+        color: #666;
+    }
+
+    .prdctfltr_wc.prdctfltr_checkbox .prdctfltr_filter label>span:before {
+        border-color: #666666;
+    }
+
+    span.prdctfltr_regular_title {
+        background: #003764 !important;
+        color: #fff !important;
+        font-size: 1.2em;
+        text-transform: capitalize;
+        padding: 8px 16px !important;
+        line-height: 1em !important;
+        font-weight: 700 !important;
+    }
+
+    .prdctfltr_filter_inner {
+        justify-content: center;
+    }
+
+    .archive .prdctfltr_filter_inner .prdctfltr_filter {
+        display: none;
+    }
+
+    span.prdctfltr_regular_title:after {
+        color: #fff;
+        font-size: 1.7em;
+    }
+
+    @media only screen and (min-width: 768px) {
+        #loadMore {
+            width: 100px;
+            color: #444;
+            display: block;
+            text-align: center;
+            margin: 3px 0;
+            padding: 3px;
+            border-radius: 0;
+            transition: .3s;
+            border: 1px solid #9f9f9f;
+            background-color: #fff;
+        }
+
+        #loadMore:hover {
+            color: #fff;
+            background-color: #003764;
+            border: 1px solid #003764;
+            text-decoration: none;
+        }
+    }
+
+    span.prdctfltr_instock {
+        display: none !important;
+    }
+
+    span.prdctfltr_sale {
+        color: #c8754e;
+    }
+
+    span.prdctfltr_sale>label>span {
+        text-decoration: underline;
+    }
+
+    /**
+    * Product Loop
+    */
+
+    .archive ul.products.columns-4 {
+        width: 77vw;
+    }
+
+    .archive ul.products.columns-4 li {
+        margin-right: 1rem !important;
+    }
+
+    .woocommerce a.woocommerce-LoopProduct-link.woocommerce-loop-product__link h2 {
+        padding-left: 0 !important;
+    }
+
+    ul.products h2.woocommerce-loop-product__title {
+        color: #666666;
+        padding: 0 !important;
+        text-align: left;
+    }
+
+    ul.products.columns-4 li span.woocommerce-Price-amount.amount {
+        font-size: 14px;
+        color: #d00000;
+        font-weight: 500
+    }
+
+    ul.products span.price {
+        line-height: 1;
+    }
+
+    ul.products span.price del {
+        display: block !important;
+        line-height: 1;
+        padding: 0;
+    }
+
+    span.price del>span {
+        color: #666 !important;
+    }
+
+    ul.products .loop-brands,
+    ul.products .nobrd {
+        color: #666666;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 600;
+        text-align: left;
+        font-size:14px;
+    }
+
+    .content {
+        font-size: .95em;
+        color: #666666;
+        font-style: italic;
+    }
+
+    .content span {
+        font-style: normal;
+    }
+
+    span.button.disabled {
+        display: none;
+    }
+
+    .woocommerce ul.products li.product .star-rating {
+        font-size: 12px;
+    }
+
+    .woocommerce .star-rating span::before {
+        color: #003764;
+    }
+
+    /* Out of Stock */
+
+    p.stock.out-of-stock {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: red;
+        font-weight: 700;
+        font-style: italic;
+        background: yellow;
+        padding: 0 .5em;
+    }
+
+    p.out-of-stock-sg {
+        padding-top: 25px;
+        font-size: 1.6em;
+        color: red;
+        font-style: italic;
+    }
+
+    span.onsale {
+        display: none;
+    }
+
+    /* Remove Instock notice*/
+
+    p.stock.in-stock {
+        display: none;
+    }
+
+
+    /**
+    * Color Attributes Swatch
+    */
+    ul.products .variations_form.wvs-archive-variation-wrapper {
+        display: none;
+    }
+
+    /**
+    * Side bar Loop
+    */
+
+    .et-db #et-boc .et-l .et_pb_widget_area_left {
+        border-right: 0;
+    }
+
+    ul.product-categories li.level2-child:hover {
+        border-left: 3px solid #013765;
+    }
+
+    li.level2-child.cat-item a {
+        padding-left: 3px;
+    }
+
+    ul.product-categories li.level1-child {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    li.level2-child.cat-item a:before {
+        display: none;
+    }
+
+    .cat-title {
+        display: none;
+    }
+
+    .term-femme li.level1-child.cat-item>a,
+    .term-homme li.level1-child.cat-item>a {
+        font-weight: 700 !important;
+    }
+
+    li.level2-child {
+        margin-left: .75em;
+    }
+
+    .term-femme ul.product-categories li.level1-child,
+    .term-homme ul.product-categories li.level1-child {
+        margin-top: 25px;
+    }
+
+    .term-femme ul.product-categories li.level1-child:first-child,
+    .term-homme ul.product-categories li.level1-child:first-child {
+        margin-top: 0;
+    }
+
+    li.level1-child>a {
+        font-weight: 400 !important;
+    }
+
+    /* Catalog Page Dimension */
+    .flex-row {
+        display: flex !important;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    @media screen and (min-width: 720px) {
+        .flex-col-1 {
+            flex: 0 1 auto !important;
+            margin: 5px !important;
+            width: 18% !important
+        }
+
+        .flex-col-2 {
+            flex: 0 1 auto !important;
+            margin: 5px !important;
+            width: 82% !important
+        }
+
+        .flex-col-2 ul.products.columns-4 {
+            width: 109% !important;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .flex-col-1 {
+            display: none;
+        }
+
+        .flex-col-2 {
+            width: 100% !important;
+
+        }
+
+    }
